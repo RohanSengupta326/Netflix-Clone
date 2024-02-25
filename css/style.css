@@ -1,0 +1,161 @@
+:root {
+    --primaryColor: #e50914;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-family: 'Arial', 'sans-serif';
+    -webkit-font-smoothing: antialiased;
+    background-color: #000;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* based styling defined. Common for all pages.*/
+
+.showcase {
+    background: url("../images/background.jpg") no-repeat bottom;
+    height: 76vh;
+    position: relative;
+}
+
+.showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.showcase-top {
+    height: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.showcase-top img {
+    width: 170px;
+    height: 100%;
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+}
+
+
+.showcase-top a {
+    position: absolute;
+    top: 40%;
+    right: 18%;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-middle {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.showcase-middle h1 {
+    font-weight: bolder;
+    font-size: 2.9rem;
+    margin: 0 0 1.2rem;
+}
+
+.showcase-middle p#subtitleone {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 0 1.2rem;
+}
+
+.showcase-middle p#subtitletwo {
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin: 0 0 1rem;
+}
+
+.formdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+}
+
+.signin-form {
+    display: inline-block;
+    width: 43%;
+    height: 100%;
+}
+
+
+
+
+/* Utilities at bottom */
+/* ex: buttons which will have similar styling properties, so all button design here, and for baseline styling will be same , but for some extra add on features like :hover, btn-circular will have some extra properties. all comes under utilities and at the bottom of the css file. */
+
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: var(--primaryColor);
+    color: white;
+    padding: 0.5rem 0.9rem;
+    text-align: center;
+    box-shadow: 0 1px 1px rgb(0, 0, 0, 0.45);
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #d00c1c;
+}
+
+.btn-xl {
+    font-size: 1.5rem;
+    padding: 1.1rem 1.8rem;
+    margin: 0 0.5rem;
+}
+
+.emailinput {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0, 0.2);
+    color: white;
+    font-size: 1rem;
+    padding: 0 1rem;
+    border: 1px solid grey;
+}
+
+.emailinput:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
