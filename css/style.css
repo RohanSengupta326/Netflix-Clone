@@ -80,12 +80,6 @@ img {
 }
 
 
-.showcase-middle p#subtitletwo {
-    font-size: 1.3rem;
-    font-weight: 200;
-    margin: 0 0 1rem;
-}
-
 .formdiv {
     display: flex;
     flex-direction: row;
@@ -181,6 +175,7 @@ img {
     float: right;
     background: url("../images/download-icon.gif") no-repeat center;
     background-size: contain;
+    border: 1px solid blue;
     width: 3rem;
     height: 3rem;
     transform: translate(-50%, -50%);
@@ -220,6 +215,44 @@ img {
     width: 30%;
 }
 
+.queries {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 60%;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.querycontainer {
+    margin-bottom: 2rem;
+}
+
+.querycontainer>div {
+    background: rgba(62, 62, 62, 255);
+    height: 5rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.querycontainer div>p {
+    margin: 0 0 0 1.5rem;
+
+}
+
+.querycontainer div>i {
+    margin: 0 1.5rem 0 0 ;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.signin-form#bottomform {
+    width: 30%;
+}
 
 /* Utilities at bottom */
 /* ex: buttons which will have similar styling properties, so all button design here, and for baseline styling will be same , but for some extra add on features like :hover, btn-circular will have some extra properties. all comes under utilities and at the bottom of the css file. */
@@ -251,6 +284,7 @@ img {
     margin: 0 0.5rem;
 }
 
+/* texts */
 h1 {
     font-weight: bolder;
     font-size: 2.9rem;
@@ -262,6 +296,12 @@ p {
     font-weight: 500;
     margin: 0 0 1.2rem;
     overflow: auto;
+}
+
+p.pmedium {
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin: 0 0 1rem;
 }
 
 .emailinput {
