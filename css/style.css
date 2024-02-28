@@ -175,7 +175,6 @@ img {
     float: right;
     background: url("../images/download-icon.gif") no-repeat center;
     background-size: contain;
-    border: 1px solid blue;
     width: 3rem;
     height: 3rem;
     transform: translate(-50%, -50%);
@@ -222,6 +221,7 @@ img {
     grid-template-columns: 60%;
     text-align: center;
     margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .querycontainer {
@@ -245,13 +245,48 @@ img {
 }
 
 .querycontainer div>i {
-    margin: 0 1.5rem 0 0 ;
+    margin: 0 1.5rem 0 0;
     font-size: 2.5rem;
     font-weight: normal;
 }
 
 .signin-form#bottomform {
     width: 30%;
+}
+
+.footersection {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0 0 0;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10%;
+    row-gap: 9%;
+    color: grey;
+    margin-right: 10rem;
+    margin-bottom: 8rem;
+}
+
+.footersection>a {
+    text-decoration: underline;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.linkone {
+    grid-column: 1/5;
+    font-size: 1.1rem;
+}
+
+.linkone a {
+    color: grey;
+    text-decoration: underline;
+}
+
+.end {
+    grid-column: 1 / 5;
+    margin-top: 1rem;
+    font-size: 0.9rem;
 }
 
 /* Utilities at bottom */
