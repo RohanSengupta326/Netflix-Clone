@@ -32,7 +32,8 @@ img {
 
 .showcase {
     background: url("../images/background.jpg") no-repeat bottom;
-    height: 76vh;
+    background-size: cover;
+    height: 29rem;
     position: relative;
 }
 
@@ -54,11 +55,11 @@ img {
 }
 
 .showcase-top img {
-    width: 170px;
-    height: 100%;
+    width: 100px;
+    height: 60%;
     position: absolute;
     top: 40%;
-    left: 23%;
+    left: 15%;
     transform: translate(-50%, -50%);
 }
 
@@ -66,33 +67,34 @@ img {
 .showcase-top a {
     position: absolute;
     top: 40%;
-    right: 18%;
+    right: 1%;
     transform: translate(-50%, -50%);
 }
 
 .showcase-middle {
     position: absolute;
     z-index: 2;
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 6% 8%;
     text-align: center;
 }
 
 
+
+
 .formdiv {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    height: 60px;
+    align-items: center;
     width: 100%;
+    height: 7rem;
 }
 
 .signin-form {
-    width: 43%;
-    height: 100%;
+    width: 100%;
+    height: 45%;
 }
-
 
 .nextshowcase {
     height: 68vh;
@@ -314,29 +316,39 @@ img {
 }
 
 .btn-xl {
-    font-size: 1.5rem;
-    padding: 1.1rem 1.8rem;
-    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    margin: 1rem 0 0 0;
+    width: 10rem;
+    height: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* texts */
+
 h1 {
-    font-weight: bolder;
-    font-size: 2.9rem;
-    margin: 0 0 1.2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin: 0 0 1.2rem;
     overflow: auto;
 }
 
 p.pmedium {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 0 1.2rem;
+    overflow: auto;
+    /* font-size: 1.3rem;
     font-weight: 200;
-    margin: 0 0 1rem;
+    margin: 0 0 1rem; */
 }
 
 .emailinput {
@@ -346,7 +358,7 @@ p.pmedium {
     background-color: rgb(40, 36, 36, 0.3);
     color: white;
     font-size: 1rem;
-    padding: 0 1rem;
+    padding: 1rem;
     border: 1px solid grey;
 }
 
@@ -360,4 +372,93 @@ p.pmedium {
     height: 0.5rem;
     border: none;
     outline: none;
+}
+
+
+
+
+
+/* Media Queries */
+
+
+
+@media only screen and (min-width: 590px) {
+
+    /* small window view */
+    .showcase {
+        height: 35rem;
+    }
+
+    .showcase-middle {
+        padding-top: 8%;
+    }
+
+    /* signin button changes  */
+    /* changes : formdiv, btn-xl, emailinput */
+    .formdiv {
+        flex-direction: row;
+    }
+
+    .signin-form {
+        width: 50%;
+        height: 50%;
+    }
+
+    .btn-xl {
+        font-size: 1.5rem;
+        margin: 0 0 0 0.5rem;
+        width: 12rem;
+        height: 3.5rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 954px) {
+
+    /* For tablet: */
+    .showcase {
+        height: 43.75rem;
+    }
+
+    h1 {
+        font-size: 2.9rem;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0 0 1.2rem;
+        overflow: auto;
+    }
+
+    p.pmedium {
+        font-size: 1.3rem;
+        font-weight: 200;
+        margin: 0 0 1rem;
+    }
+
+    .showcase-top img {
+        width: 170px;
+        height: 100%;
+    }
+
+    .signin-form {
+        width: 23rem;
+        height: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+    /* for extra large screens */
+
+    .showcase-top img {
+        left: 23%;
+    }
+
+    .showcase-top a {
+        right: 18%;
+    }
 }
