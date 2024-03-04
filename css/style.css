@@ -99,7 +99,6 @@ img {
 
 /* next section */
 .nextshowcase {
-    /* border: 2px solid red; */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -108,6 +107,7 @@ img {
     text-align: center;
     margin: 4rem auto;
     width: 90%;
+    /* border: 2px solid red; */
 }
 
 .videoimagediv {
@@ -129,62 +129,59 @@ img {
 }
 
 
-
-
-.showcasethree img {
-    height: 70%;
-    width: 30%;
-    z-index: 1;
+.secondvideoimagediv {
+    position: relative;
+    z-index: -1;
 }
 
-.showcasethreetext {
-    width: 30%;
-}
 
 .downloadingdisplay {
-    z-index: 2;
     position: absolute;
-    top: 72%;
-    left: 35%;
-    transform: translate(-50%, -50%);
+    top: 77%;
+    left: 17%;
     border: 2px solid grey;
     border-radius: 10px;
     outline: none;
-    height: 16%;
-    width: 16%;
+    height: 3.8rem;
+    width: 65%;
     background-color: #000;
+    padding: 0.3% 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .downloadingdisplay img {
-    float: left;
-    margin: 0.5rem;
-    width: 18%;
-    height: 80%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 2.2rem;
+    height: 87%;
 }
 
-.downloadingdisplay p.title {
-    float: left;
-    font-size: 1rem;
-    font-weight: bold;
-    width: 45%;
-    margin: 10% 0 0 2%;
+.titleflexbox {
+    flex-grow: 1;
+    flex-shrink: 0;
+    text-align: left;
+    margin: 0 1rem;
 }
 
-.downloadingdisplay p.subtitle {
-    float: left;
+.downloadingdisplay div.title {
     font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.downloadingdisplay div.subtitle {
+    font-size: 0.8rem;
     color: #045ac8;
-    margin: 0 0 0 2%;
-    width: 40%;
 }
 
 .downloadingdisplay div.downloadicon {
-    float: right;
+    flex-shrink: 0;
+    flex-grow: 0;
     background: url("../images/download-icon.gif") no-repeat center;
     background-size: contain;
     width: 3rem;
-    height: 3rem;
-    transform: translate(-50%, -50%);
+    height: 2.5rem;
 }
 
 /* --- */
@@ -414,6 +411,29 @@ p.pmedium {
         height: 3.5rem;
     }
 
+
+    /* 3rd section chages */
+    .downloadingdisplay {
+        height: 5rem;
+    }
+
+    .downloadingdisplay img {
+        width: 2.8rem;
+    }
+
+    .downloadingdisplay div.title {
+        font-size: 1rem;
+    }
+
+    .downloadingdisplay div.subtitle {
+        font-size: 0.9rem;
+    }
+
+    .downloadingdisplay div.downloadicon {
+        width: 3.3rem;
+        height: 2.8rem;
+    }
+
 }
 
 
@@ -467,10 +487,29 @@ p.pmedium {
         height: 90%;
     }
 
+    /* 3rd screen changes */
+    .showcasethree div.showcasethreetext {
+        order: 2;
+        text-align: left;
+        width: 60%;
+    }
+
+    .showcasethree div.secondvideoimagediv {
+        order: 1;
+    }
+
+    .downloadingdisplay {
+        height: 6rem;
+    }
+
+    .downloadingdisplay img {
+        height: 4.8rem;
+        width: 3.4rem;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
-    /* for extra large screens */
+
 
     .showcase-top img {
         left: 23%;
@@ -492,9 +531,28 @@ p.pmedium {
         width: 75%;
     }
 
+    /* 3rd section */
+    .showcasethree div.showcasethreetext {
+        width: 45%;
+    }
+
+    .downloadingdisplay {
+        width: 55%;
+        padding-left: 0.8rem;
+        top: 70%;
+        left: 22%;
+    }
+
+    .showcasethree div.secondvideoimagediv {
+        height: 50%;
+        width: 50%;
+    }
+
 }
 
 @media only screen and (min-width: 1920px) {
+
+    /* 2nd section */
     .nextshowcase {
         width: 60%;
     }
@@ -504,5 +562,22 @@ p.pmedium {
         max-width: 800px;
     }
 
+    /* 3rd section */
+    /* 3rd section */
+    .showcasethree div.showcasethreetext {
+        width: 50%;
+    }
 
+    /*
+    .downloadingdisplay {
+        width: 55%;
+        padding-left: 0.8rem;
+        top: 70%;
+        left: 22%;
+    }
+
+    .showcasethree div.secondvideoimagediv {
+        height: 50%;
+        width: 50%;
+    } */
 }
