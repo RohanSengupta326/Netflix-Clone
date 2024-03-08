@@ -97,7 +97,7 @@ img {
 }
 
 
-/* next section */
+/* 2nd section */
 .nextshowcase {
     position: relative;
     display: flex;
@@ -128,6 +128,7 @@ img {
     /* max-height: 37%; */
 }
 
+/* 3rd Section */
 
 .secondvideoimagediv {
     position: relative;
@@ -184,48 +185,39 @@ img {
     height: 2.5rem;
 }
 
-/* --- */
+/* 4th section */
 
-.showcasefour img {
-    height: 70%;
-    width: 30%;
-    z-index: 2;
-}
-
-.showcasefourtext {
-    width: 30%;
-}
-
-.showcasefourvideo {
-    z-index: 1;
-    width: 19%;
-    height: 40%;
+.fourthvideodiv {
+    /* border: 2px solid red; */
+    overflow: hidden;
+    z-index: -1;
     position: absolute;
-    right: 16%;
-    top: 40%;
-    transform: translate(-50%, -50%);
+    left: 19.5%;
+    top: 13%;
+    width: 60%;
+    height: 48%;
 }
 
-/* ------ */
+/* 5th section */
 
 
-.showcasefive img {
-    height: 70%;
-    width: 30%;
-}
+
 
 .showcasefivetext {
-    width: 30%;
+    width: 90%;
 }
 
+/* 6th section : queries */
+
 .queries {
+    /* border: 2px solid red; */
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 60%;
+    grid-template-columns: 100%;
     text-align: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin: 5rem auto;
+    width: 90%;
 }
 
 .querycontainer {
@@ -254,20 +246,20 @@ img {
     font-weight: normal;
 }
 
-.signin-form#bottomform {
-    width: 30%;
-}
+
+/* footer grid */
 
 .footersection {
+    /* border: 2px solid red; */
     display: grid;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    margin: 5rem 0 0 0;
+    margin: 5rem auto;
+    width: 90%;
     grid-template-columns: auto auto auto auto;
     column-gap: 10%;
     row-gap: 9%;
     color: grey;
-    margin-right: 10rem;
     margin-bottom: 8rem;
 }
 
@@ -292,6 +284,8 @@ img {
     margin-top: 1rem;
     font-size: 0.9rem;
 }
+
+
 
 /* Utilities at bottom */
 /* ex: buttons which will have similar styling properties, so all button design here, and for baseline styling will be same , but for some extra add on features like :hover, btn-circular will have some extra properties. all comes under utilities and at the bottom of the css file. */
@@ -506,6 +500,16 @@ p.pmedium {
         height: 4.8rem;
         width: 3.4rem;
     }
+
+    /* 4th section changes */
+    .showcasefourtext {
+        text-align: start;
+    }
+
+    /* 5th section */
+    .showcasefivetext {
+        text-align: start;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -557,27 +561,10 @@ p.pmedium {
         width: 60%;
     }
 
-    .videoimagediv {
-        max-height: 800px;
-        max-width: 800px;
-    }
 
-    /* 3rd section */
     /* 3rd section */
     .showcasethree div.showcasethreetext {
         width: 50%;
     }
 
-    /*
-    .downloadingdisplay {
-        width: 55%;
-        padding-left: 0.8rem;
-        top: 70%;
-        left: 22%;
-    }
-
-    .showcasethree div.secondvideoimagediv {
-        height: 50%;
-        width: 50%;
-    } */
 }
