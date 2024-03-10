@@ -224,26 +224,47 @@ img {
     margin-bottom: 2rem;
 }
 
-.querycontainer>div {
-    background: rgba(62, 62, 62, 255);
-    height: 5rem;
+.querycontainer div.text-and-sign {
+    /* border: 2px solid blue; */
     width: 100%;
-    margin-bottom: 0.5rem;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
+.querycontainer>div {
+    background: rgba(62, 62, 62, 255);
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 0.5rem;
+}
+
 .querycontainer div>p {
     margin: 0 0 0 1.5rem;
-
 }
 
 .querycontainer div>i {
     margin: 0 1.5rem 0 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: normal;
+}
+
+.querycontainer div.showAnswer {
+    display: none;
+    background: rgba(62, 62, 62, 255);
+    width: 100%;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+
+.querycontainer div.showAnswer.thindivider {
+    background-color: black;
+    height: 2rem;
+    width: 100%;
 }
 
 
